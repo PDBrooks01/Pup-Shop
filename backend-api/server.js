@@ -4,6 +4,8 @@ const app = express()
 const bodyparser = require('body-parser')
 const PORT = process.env.PORT
 const authRoutes = require('./routes/auth')
+const productRoutes = require('./routes/products')
+const cartRoutes = require('./routes/cart')
 const errorController = require('./controllers/error')
 
 app.use(bodyparser.json())
@@ -17,6 +19,8 @@ app.use((req,res,next)=>{
 
 
 app.use('/auth',authRoutes)
+app.use('/cart',cartRoutes)
+app.use('/home',productRoutes)
 app.use(errorController.get404)
 app.use(errorController.get500)
 
