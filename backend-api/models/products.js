@@ -9,9 +9,10 @@ module.exports = class Products{
   }
 
 
-  static fetchAll(name,unit_price){
+  static fetchAll(){
     return db.query(
-      'SELECT name,unit_price AS price FROM products',[name,unit_price]
+      //'SELECT name,unit_price AS price FROM products',[name,unit_price]
+      'SELECT * FROM products'
     );
   }
   static show (product_id){
