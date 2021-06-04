@@ -12,8 +12,9 @@ exports.getProducts = async (req,res,next) =>{
   }
 }
 exports.showProducts = async (req,res,next)=>{
+  const id = req.params.id
   try {
-    const [singleProduct] = await Products.show()
+    const [singleProduct] = await Products.show(id)
     res.status(200).json(singleProduct)
   } catch (err){
     if (!err.statusCode){
