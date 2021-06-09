@@ -1,0 +1,11 @@
+INSERT INTO products VALUES(1,'Kong Classic - Large',10,15.00,"","imgs/KongClassic.jpeg");
+INSERT INTO products VALUES(2,'Kong Extreme - Large',10,15.00,"","imgs/KongExtreme.jpeg");
+INSERT INTO products VALUES(3,'Kong Floppy Knots Bunny',10,15.00,"","imgs/KongBunny.jpeg");
+INSERT INTO products VALUES(4,'Purina Pro Plan Sport - All Life Stages (37.5-lb Bag)',10,52.48,"","imgs/PurinaProPlanSport.jpg");
+INSERT INTO products VALUES(5,'Ceasar Filet Mignon - ',100,0.88,"","imgs/CesarFiletMignon.jpeg");
+INSERT INTO products VALUES(6,'Outward Hound Plastic Slow Feeder -Blue',10,15.85,"","imgs/SlowFeeder.jpg");
+INSERT INTO products VALUES(7,'YETI Boomer 8 Dog Bowl',10,49.99,"","imgs/YetiDogBowl.jpeg");
+INSERT INTO products VALUES(8,"Three Dog Bakery Lick'n Crunch! Sandwhich Cookies Dog Treats - 39oz Box",10,15.99,"","imgs/ThreeDogBakeryAssort.jpg");
+INSERT INTO products VALUES(9,"Dentley's® Nature's Rawhide-Free Natural Jumbo Chews Dog Treat",10,14.99,"","imgs/DentleysChompingChews.jpeg");
+INSERT INTO products VALUES(10,'Snoozer® Luxury Microsuede Rectangle Cozy Cave Dog Bed',10,105.95,"","imgs/Snoozer.jpeg");
+INSERT INTO products VALUES(11,"Top Paw® Overstuffed Knit Donut Pet Bed -XS",10,24.99,"","imgs/toppawbed.jpeg");

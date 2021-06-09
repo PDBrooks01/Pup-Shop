@@ -23,3 +23,27 @@ exports.showProducts = async (req,res,next)=>{
     next(err)
   }
 }
+
+// exports.add = async(req,res,next)=>{
+//   try{
+//     const [addProducts] = await Products.add();
+//     res.status(200).json(addProducts)
+//   }catch(err){
+//     if(!err.statusCode){
+//       err.statusCode=500;
+//     }
+//   }
+//   next(err)
+// }
+//
+// exports.delete = async(req,res,next)=>{
+//   try{
+//     const [addProducts] = await Products.add();
+//     res.status(200).json(addProducts)
+//   }catch(err){
+//     if(!err.statusCode){
+//       err.statusCode=500;
+//     }
+//   }
+//   next(err)
+// }

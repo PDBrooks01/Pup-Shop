@@ -24,9 +24,11 @@ CREATE TABLE `users`(
     PRIMARY KEY (`order_id`)
     );
     CREATE TABLE `products`(
-	`product_id` INT NOT NULL auto_increment,
-    `name` varchar(50) NOT NULL,
+	`id` INT NOT NULL auto_increment,
+    `name` varchar(255) NOT NULL,
     `shop_quantity` INT,
-    `unit_price` DECIMAL(4,2) NOT NULL,
-    PRIMARY KEY (`product_id`)
+    `unit_price` DECIMAL(5,2) NOT NULL,
+		`description` varchar(255),
+		`img` varchar(255)
+    PRIMARY KEY (`id`)
     );

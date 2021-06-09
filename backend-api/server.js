@@ -2,6 +2,7 @@ require('dotenv').config()
 const express = require('express')
 const app = express()
 const bodyparser = require('body-parser')
+const cors = require('cors')
 const PORT = process.env.PORT
 const authRoutes = require('./routes/auth')
 const productRoutes = require('./routes/products')
@@ -10,6 +11,19 @@ const errorController = require('./controllers/error')
 
 app.use(bodyparser.json())
 //CORS
+const whitelist = ['http://localhost:3000']
+const corsOptions = {
+    origin: function (origin, callback) {
+      // console.log('this is the origin.............', origin)
+        if (whitelist.indexOf(origin) !== -1 || !origin) {
+            callback(null, true)
+        } else {
+            callback(new Error('Not allowed by CORS'))
+        }
+    },
+    credentials: true
+}
+app.use(cors(corsOptions))
 app.use((req,res,next)=>{
   res.setHeader('Access-Control-Allow-Origin','*')
   res.setHeader('Access-Control-Allow-Methods','GET,POST,PUT,UPDATE,DELETE')

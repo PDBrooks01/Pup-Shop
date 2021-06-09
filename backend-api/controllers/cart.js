@@ -14,7 +14,7 @@ exports.getAllCartItems = async (req,res,next) =>{
 
 exports.postCart = async (req,res,next)  =>{
   try {
-    const postResponse = await Cart.post(req.body.product_name, req.body.unit_price)
+    const postResponse = await Cart.POST(req.body.id,req.body.img,req.body.product_name,req.body.unit_price)
     res.status(201).json(postResponse)
   } catch (err){
     if (!err.statusCode){
