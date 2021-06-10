@@ -1,5 +1,5 @@
 {
-  "host":"us-cdbr-east-04.cleardb.com",
+  "host":"mysql://b5d998ac4308b6:81a67508@us-cdbr-east-04.cleardb.com/heroku_cad49eea5459fbb?reconnect=true",
   "user":"b5d998ac4308b6",
   "database":"heroku_cad49eea5459fbb",
   "password":"81a67508"
