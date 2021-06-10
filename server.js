@@ -11,7 +11,7 @@ const errorController = require('./controllers/error')
 
 app.use(bodyparser.json())
 //CORS
-const whitelist = ['http://localhost:3000', 'https://pup-shop-frontend.herokuapp.com/home']
+const whitelist = ['http://localhost:3000', 'https://pup-shop-frontend.herokuapp.com']
 const corsOptions = {
     origin: function (origin, callback) {
       // console.log('this is the origin.............', origin)
