@@ -1,5 +1,5 @@
 {
-  "host":"CLEARDB_DATABASE_URL",
+  "host": "process.env.CLEARDB_DATABASE_URL",
   "user":"b5d998ac4308b6",
   "database":"heroku_cad49eea5459fbb",
   "password":"81a67508"
