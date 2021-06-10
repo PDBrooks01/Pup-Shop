@@ -1,12 +1,12 @@
-DROP TABLE `users`,`pets`,`orders`,`products`;
+use `heroku_cad49eea5459fbb`;
 CREATE TABLE `users`(
-	`customer_id` INT NOT NULL auto_increment,
+	`id` INT NOT NULL auto_increment,
     `first_name` varchar(255) NOT NULL,
     `last_name` varchar(255) NOT NULL,
     `email` varchar(255) NOT NULL,
     `password` varchar(255) NOT NULL,
     `pets` varchar(255),
-    PRIMARY KEY (`customer_id`)
+    PRIMARY KEY (`id`)
     );
     CREATE TABLE `pets`(
 	`pet_id` INT NOT NULL auto_increment,
@@ -28,7 +28,7 @@ CREATE TABLE `users`(
     `name` varchar(255) NOT NULL,
     `shop_quantity` INT,
     `unit_price` DECIMAL(5,2) NOT NULL,
-		`description` varchar(255),
-		`img` varchar(255)
+	`description` varchar(255),
+	`img` varchar(255),
     PRIMARY KEY (`id`)
     );
